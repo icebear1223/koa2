@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block head %}
+{% parent %}
+    
+{% endblock %}
+
+{% block content %}
+<div class = "container">
+    <a href="/form" id="create">新增</a>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">序号</th>
+                <th scope="col">书名</th>
+                <th scope="col">作者</th>
+                <th scope="col">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in res %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.writer}}</td>
+                    <td><a  class="delete" sid = "{{item.id}}">删除</a><a href="/update/{{item.id}}">修改</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+    
+{% endblock %}
+
+{% block script %}
+{% parent %}
+    
+{% endblock %}

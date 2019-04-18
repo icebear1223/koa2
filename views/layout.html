@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+
+    {% block head %}
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% block script %}
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/3.1.2/system.js"></script>
+    <script src="/scripts/system.js"></script>
+    <script type="nomodule">
+        console.log('支持模块化');
+        import("/scripts/es6.js").then((_) => {
+            const demo = new _.default();
+            demo.say();
+        })
+    </script>
+    <script type="module">
+        System.import("/scripts/es6.bundle.js").then((_) => {
+            const demo = new _.default();
+            demo.say();
+        })
+    </script>
+    {% endblock %}
+</body>
+</html>

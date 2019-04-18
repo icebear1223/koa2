@@ -1,0 +1,117 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-04-18T13:03:06.347Z",
+    "end": "2019-04-18T13:03:06.510Z",
+    "duration": 163,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "3e1cde61-e8c8-417d-a9a1-f193c2d4f2ca",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "9229feea-07b9-49d1-b156-f3d1eb805197",
+        "title": "node接口测试",
+        "fullFile": "/home/jojo/Desktop/koademo2/test/service/router.spec.js",
+        "file": "/test/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "获取所有数据的接口测试",
+            "fullTitle": "node接口测试 获取所有数据的接口测试",
+            "timedOut": false,
+            "duration": 142,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request()\n.get(\"/delete/20\")\n.expect(200)\n.set(\"Accept\",\"aplication/json\")\n.expect(\"Content-Type\",/json/)\n.end(function(err,res){\n    console.log(res.body)\n    if(err){\n        done(err)\n    }\n    if(res.body.code == 0){\n        done();\n    }else{\n        done(new Error(\"接口数据异常\"))\n    }\n})",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e93fab60-5aa5-4ace-8a31-0140a1d8e219",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e93fab60-5aa5-4ace-8a31-0140a1d8e219"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 142,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "c5456653-821c-4494-9154-73d5b005151b",
+        "title": "测试页面功能",
+        "fullFile": "/home/jojo/Desktop/koademo2/test/service/router.spec.js",
+        "file": "/test/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "测试新增功能的页面调转",
+            "fullTitle": "测试页面功能 测试新增功能的页面调转",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "rize\n.goto('http://localhost:3000/')\n.click('#create')\n.waitForNavigation()\n.assertUrlIs('http://localhost:3000/create')\n.end()",
+            "err": {},
+            "isRoot": false,
+            "uuid": "85465c75-55ed-4182-9488-8f0fb9f467df",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "85465c75-55ed-4182-9488-8f0fb9f467df"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

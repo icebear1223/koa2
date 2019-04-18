@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block head %}
+{% parent %}
+    
+{% endblock %}
+
+{% block content %}
+<div class = "container">
+    <form>
+        <input type="hidden" value="{{res.id}}" id="sid"/>
+        <div class="form-group">
+            <label for="bookname">书名</label>
+            <input type="text" class="form-control" id="bookname" placeholder="书名" value="{{res.name}}">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">作者</label>
+            <input type="text" class="form-control" id="writer" placeholder="作者" value="{{res.writer}}">
+        </div>
+        <button type="button" id="update" class="btn btn-primary">提交</button>
+    </form>
+</div>
+    
+{% endblock %}
+
+{% block script %}
+{% parent %}
+    <script>
+        
+    </script>
+{% endblock %}

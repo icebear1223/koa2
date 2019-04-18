@@ -1,0 +1,50 @@
+[2019-04-15T20:31:03.957] [ERROR] router - 页面失败404
+[2019-04-15T20:34:05.109] [ERROR] router - 页面失败404
+[2019-04-15T20:35:15.233] [ERROR] router - 页面失败404
+[2019-04-15T20:36:08.936] [ERROR] router - 页面失败404
+[2019-04-15T20:37:02.676] [ERROR] router - 页面失败404
+[2019-04-15T20:37:10.782] [ERROR] router - 页面失败404
+[2019-04-15T20:37:46.917] [ERROR] router - 页面失败404
+[2019-04-15T20:37:52.724] [ERROR] router - 页面失败404
+[2019-04-15T22:20:54.427] [ERROR] router - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:125:11)
+    at extname (path.js:1245:5)
+    at Object.render (/home/jojo/Desktop/koademo2/node_modules/koa-swig/index.js:96:13)
+    at render.next (<anonymous>)
+    at onFulfilled (/home/jojo/Desktop/koademo2/node_modules/co/index.js:65:19)
+    at /home/jojo/Desktop/koademo2/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (/home/jojo/Desktop/koademo2/node_modules/co/index.js:50:10)
+    at Object.createPromise [as render] (/home/jojo/Desktop/koademo2/node_modules/co/index.js:30:15)
+    at /home/jojo/Desktop/koademo2/controllers/Controllers.js:16:34
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)
+[2019-04-15T22:20:54.610] [ERROR] router - 页面失败404
+[2019-04-16T21:03:49.990] [ERROR] router - ReferenceError: options is not defined
+    at SafeRequest.fetch (/home/jojo/Desktop/koademo2/utils/SafeRequest.js:15:26)
+    at Index.getData (/home/jojo/Desktop/koademo2/models/index.js:32:28)
+    at /home/jojo/Desktop/koademo2/controllers/Controllers.js:11:37
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/jojo/Desktop/koademo2/node_modules/koa-simple-router/index.js:198:12)
+    at /home/jojo/Desktop/koademo2/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/jojo/Desktop/koademo2/middleware/errorHandler.js:17:19)
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/jojo/Desktop/koademo2/middleware/errorHandler.js:8:23)
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/home/jojo/Desktop/koademo2/node_modules/koa-bodyparser/index.js:86:11)
+[2019-04-16T21:03:50.284] [ERROR] router - 页面失败404
+[2019-04-16T21:04:51.025] [ERROR] router - ReferenceError: options is not defined
+    at SafeRequest.fetch (/home/jojo/Desktop/koademo2/utils/SafeRequest.js:15:26)
+    at Index.getData (/home/jojo/Desktop/koademo2/models/index.js:32:28)
+    at /home/jojo/Desktop/koademo2/controllers/Controllers.js:11:37
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/jojo/Desktop/koademo2/node_modules/koa-simple-router/index.js:198:12)
+    at /home/jojo/Desktop/koademo2/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/jojo/Desktop/koademo2/middleware/errorHandler.js:17:19)
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/jojo/Desktop/koademo2/middleware/errorHandler.js:8:23)
+    at dispatch (/home/jojo/Desktop/koademo2/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/home/jojo/Desktop/koademo2/node_modules/koa-bodyparser/index.js:86:11)
+[2019-04-16T21:53:29.592] [ERROR] router - 页面失败404
+[2019-04-18T20:36:50.624] [ERROR] router - 页面失败404
