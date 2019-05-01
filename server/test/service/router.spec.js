@@ -1,5 +1,5 @@
 const superagent = require("supertest");
-const app = require("../../app");
+const app = require("../../../app");
 const Rize = require("rize");
 const rize = new Rize();
 

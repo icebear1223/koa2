@@ -4,8 +4,8 @@ const co = require('co');
 const path = require('path');
 const render = require('koa-swig');
 const log4js = require('log4js');
-const errorHandler = require('./middleware/errorHandler');
-const config = require('./config');
+const errorHandler = require('./server/middleware/errorHandler');
+const config = require('./server/config');
 
 const bodyParser = require('koa-bodyparser');
 
@@ -40,7 +40,7 @@ const logger = log4js.getLogger('router');
 //容错写在路由的上方，根据koa的机制，会在返回的时候执行
 errorHandler.error(app,logger);
 //注册路由
-require('./controllers/index')(app);
+require('./server/controllers/index')(app);
 app.listen(config.port,()=>{
     console.log('server start');
 });
